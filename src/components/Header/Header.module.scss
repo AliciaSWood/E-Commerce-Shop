@@ -1,0 +1,88 @@
+.Header {
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(59, 21, 90);
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Circle {
+    background: linear-gradient(-45deg, white, grey, black, black);
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    animation: gradient 8s ease infinite;
+    background-size: 400% 400%;
+    box-shadow: 5px 10px 10px white;
+    margin-left: 80px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.DontCare {
+font-size: 5rem;
+margin-left: 30px;
+text-shadow: 2px 2px 8px rgb(255, 255, 255);
+color: rgb(245, 217, 217);
+}
+
+.EndBox {
+    width: 40vw;
+    height: 250px;
+    position: relative;
+    margin-left: 15vw;
+}
+
+.Navbar {
+    height: 160px;
+    width: 40vw;
+    
+}
+.Navbar > ul {
+    list-style-type:none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    
+}
+
+.Navbar > ul > li > a {
+    text-decoration: none;
+    color: rgb(83, 80, 80);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    text-shadow: 5px 5px 10px black;
+    &:hover {
+        text-shadow: 5px 5px 10px white;
+        transition: 0.2s;
+    }
+}
+
+.Subtitle {
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    text-shadow: 5px 5px 10px rgb(202, 171, 171);
+}
+.SearchBar {
+    border-radius: 30px;
+    box-shadow: 2px 2px rgb(206, 205, 205);
+    border: none;
+    height: 2rem;
+    width: 20vw;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    padding-left: 20px;
+}
