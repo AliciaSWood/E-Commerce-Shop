@@ -1,0 +1,53 @@
+.Main {
+    margin-top: 5vh;
+
+    width: 99.8vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.Image {
+    height: 600px;
+    width: 800px;
+    margin-right: 10vw;
+}
+
+.ItemInfo {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+.ButtonBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.Button {
+    height: 5vh;
+    width: 5vh;
+    margin: 4px;
+    border-radius: 50px;
+    background-color: orange;
+    border: 1px solid rgb(172, 119, 20);
+    font-size: 20px;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.2s;
+        
+    }
+}
+
+.SelectBox {
+    height: 30px;
+    font-size: 15px;
+    width: 100px
+}

@@ -1,0 +1,10 @@
+.MainGrid {
+    width: 100vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 1vw;
+    margin-bottom: 30vh;
+    margin-top: 4vh;
+}

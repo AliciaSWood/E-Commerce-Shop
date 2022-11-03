@@ -1,14 +1,16 @@
 .Header {
-    width: 100%;
+    width: 100vw;
     margin-top: 20px;
     background-color: rgb(59, 21, 90);
-    height: 250px;
+    // background-image: linear-gradient(110deg, #c4c1bd 1%, rgb(59, 21, 90));
+    background-image: linear-gradient(110deg, #2b1d42 20%, #4a2f48, #8f3d4b,  #f3b88d, #fceccb);
+    height: 258px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .Circle {
-    background: linear-gradient(-45deg, white, grey, black, black);
+    background: linear-gradient(-45deg, white, white, black, black);
     height: 220px;
     width: 220px;
     border-radius: 50%;
@@ -31,16 +33,18 @@
 
 .DontCare {
 font-size: 5rem;
-margin-left: 30px;
-text-shadow: 2px 2px 8px rgb(255, 255, 255);
-color: rgb(245, 217, 217);
+margin-left: 50px;
+margin-right: 30px;
+text-shadow: 10px 10px 8px black;
+color: white;
 }
 
 .EndBox {
-    width: 40vw;
+    width: 45vw;
     height: 250px;
     position: relative;
-    margin-left: 15vw;
+    margin-left: 6vw;
+
 }
 
 .Navbar {
@@ -66,6 +70,7 @@ color: rgb(245, 217, 217);
     &:hover {
         text-shadow: 5px 5px 10px white;
         transition: 0.2s;
+        font-size: larger;
     }
 }
 

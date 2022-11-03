@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div className = {styles.Header}>
             <div className = {styles.Circle}></div>
-            <h1 className = {styles.DontCare}>Moon Moon</h1>
+            <h1 className = {styles.DontCare}>Sweet Nothing</h1>
             <div className = {styles.EndBox}>
             <nav className = {styles.Navbar}>
             <ul>
@@ -16,7 +16,7 @@ const Header = () => {
               <li><Link to = "/cart">Cart</Link></li>
             </ul>
           </nav>
-        <h3 className = {styles.Subtitle}>We're here to sell you things <input type = {"text"} className = {styles.SearchBar} placeholder = {"Search for item..."}></input></h3>
+        <h3 className = {styles.Subtitle}>Rest and relax in absolute comfort <input type = {"text"} className = {styles.SearchBar} placeholder = {"Look for something cosy..."}></input></h3>
         
 
 
