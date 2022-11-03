@@ -34,8 +34,9 @@
     width: 5vh;
     margin: 4px;
     border-radius: 50px;
-    background-color: orange;
-    border: 1px solid rgb(172, 119, 20);
+    background-color: #2b1d42;
+    color: white;
+
     font-size: 20px;
 
     &:hover {
@@ -50,4 +51,9 @@
     height: 30px;
     font-size: 15px;
     width: 100px
+}
+
+.Label {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }

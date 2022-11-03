@@ -10,10 +10,15 @@ function App() {
   return (
     <div>
     <BrowserRouter>
-    {/* <Header /> */}
-    {/* <CarouselHolder />
-    <MainItemGrid /> */}
-    <ProductPage />
+    
+    <Header />
+    <CarouselHolder />
+    <MainItemGrid />
+    {/* <ProductPage /> */}
+    <Routes>
+    <Route path="/items/:id" element = {<ProductPage />}/>
+    
+    </Routes>
     </BrowserRouter>
     </div>
   );

@@ -16,7 +16,7 @@ const ProductPage = () => {
         <button className = {styles.Button}>+</button> <p>Number</p> <button className = {styles.Button}>-</button>
 
         </div>
-        <label for = "variant">Choose a colour:</label>
+        <label className = {styles.Label} for = "variant">Choose a colour:</label>
         <select name = "variant" className = {styles.SelectBox}>
             <option>Blue</option>
             <option>Pink</option>
