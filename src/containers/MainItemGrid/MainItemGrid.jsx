@@ -12,13 +12,19 @@ const MainItemGrid = () => {
  
     console.log(items)
     return (
+        <>
+        <div className = {styles.BestSellers}>
+            <h1>Some of our favourites...</h1>
+        </div>
         <div className = {styles.MainGrid}>
+            
             {items.map((itemData) => (
                 <ItemCard key = {itemData.id} itemData = {itemData}/>
             ))}
             
             
         </div>
+        </>
     );
 };
 

@@ -30,8 +30,8 @@
 }
 
 .Button {
-    height: 5vh;
-    width: 5vh;
+    height: 40px;
+    width: 40px;
     margin: 4px;
     border-radius: 50px;
     background-color: #2b1d42;
@@ -46,6 +46,26 @@
         
     }
 }
+.CartButton {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background: rgb(226, 115, 134);
+  border-radius: 50px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  outline: 0 solid transparent;
+  padding: 15px 25px;
+  width: fit-content;
+   border: 0;
+   &:hover {
+    opacity: 0.7;
+   }
+}
 
 .SelectBox {
     height: 30px;
@@ -55,5 +75,8 @@
 
 .Label {
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+.Stock {
+    font-size: 15px;
 }

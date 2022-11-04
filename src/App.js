@@ -11,11 +11,14 @@ function App() {
     <div>
     <BrowserRouter>
     
-    <Header />
-    <CarouselHolder />
-    <MainItemGrid />
+    
     {/* <ProductPage /> */}
     <Routes>
+      <Route path="/" element = {<>
+        <Header />
+    <CarouselHolder />
+    <MainItemGrid />
+      </>}/>
     <Route path="/items/:id" element = {<ProductPage />}/>
     
     </Routes>

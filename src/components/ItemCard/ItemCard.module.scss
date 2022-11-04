@@ -1,12 +1,14 @@
 .Card {
     height: 33vh;
     width: 15vw;
-    border: 2px solid black;
+    // border: 2px solid black;
     margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 10px 10px 10px rgb(218, 217, 217);
+ 
 
     &:hover {
         box-shadow: 10px 10px 20px;
@@ -20,3 +22,8 @@
     height: 60%;
 }
 
+
+.Nav {
+    text-decoration: none;
+    color: black;
+}

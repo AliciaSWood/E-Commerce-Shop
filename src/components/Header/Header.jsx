@@ -1,8 +1,35 @@
-import React from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import styles from "./Header.module.scss"
-import { Link, Routes, Route } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { SearchContext } from '../../services/search';
 
 const Header = () => {
+const navigate = useNavigate()
+ const SearchContext = createContext();
+ const [search, setSearch] = useState("")
+
+  const Search = ({children}) => {
+      const [search, setSearch] = useState("")
+         const data = {search, setSearch }
+      return (
+          <SearchContext.Provider value = {data}>{children}</SearchContext.Provider>
+      );
+  };
+ 
+
+  const [input, setInput] = useState("")
+
+  const newInput = (event) => {
+    setInput(event.target.value)
+  }
+
+  const handleSearch = (event) => {
+    event.preventDefault()
+    setSearch(input)
+    setInput("")
+    navigate("/searchresults")
+  }
+ 
     return (
         <div className = {styles.Header}>
             <div className = {styles.Circle}></div>
@@ -11,13 +38,16 @@ const Header = () => {
             <nav className = {styles.Navbar}>
             <ul>
               <li><Link to = "/">Home</Link> </li>
-              <li><Link to = "/shop">Shop</Link></li>
-              <li><Link to = "/about">About Us</Link></li>
-              <li><Link to = "/cart">Cart</Link></li>
+              <li><Link to = "/">Shop</Link></li>
+              <li><Link to = "/">About Us</Link></li>
+              <li><Link to = "/">Cart</Link></li>
             </ul>
           </nav>
-        <h3 className = {styles.Subtitle}>Rest and relax in absolute comfort <input type = {"text"} className = {styles.SearchBar} placeholder = {"Look for something cosy..."}></input></h3>
+          <form onSubmit = {handleSearch}><h3 className = {styles.Subtitle}>Rest and relax in absolute comfort 
         
+          <input type = {"text"} className = {styles.SearchBar} placeholder = {"Look for something cosy..."} onChange = {newInput}></input>
+          </h3>
+          </form>
 
 
             </div>

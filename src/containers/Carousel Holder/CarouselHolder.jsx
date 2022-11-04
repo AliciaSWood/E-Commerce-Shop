@@ -9,6 +9,7 @@ const CarouselHolder = () => {
     return (
         <div className = {styles.Holder}>
             <Carousel />
+            
         </div>
     );
 };
