@@ -25,3 +25,11 @@ export const getItemById = async(id) => {
     return {id: querySnapshot.id, ...querySnapshot.data()}
 
 };
+// const getanItem = async (id) => {
+//     const docRef = doc(database, "items", id)
+//     const querySnapshot = await getDoc(docRef)
+//     return
+// }
+
+
+

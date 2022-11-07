@@ -10,7 +10,9 @@ const MainItemGrid = () => {
         getItems().then((items) => setItems(items))
     }, [])
  
-    console.log(items)
+    // console.log(items)
+    // const firstItem = items.find(item => item.id === "i10");
+    // console.log(firstItem.image)
     return (
         <>
         <div className = {styles.BestSellers}>
