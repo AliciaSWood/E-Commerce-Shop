@@ -1,7 +1,7 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useState } from 'react';
 import styles from "./Header.module.scss"
 import { Link, useNavigate } from 'react-router-dom';
-import { SearchContext } from '../../services/search';
+
 
 const Header = () => {
 const navigate = useNavigate()
@@ -32,7 +32,8 @@ const navigate = useNavigate()
  
     return (
         <div className = {styles.Header}>
-            <div className = {styles.Circle}></div>
+          <div>
+            <div className = {styles.Circle}></div></div>
             <h1 className = {styles.DontCare}>Sweet Nothing</h1>
             <div className = {styles.EndBox}>
             <nav className = {styles.Navbar}>
@@ -43,7 +44,7 @@ const navigate = useNavigate()
               <li><Link to = "/">Cart</Link></li>
             </ul>
           </nav>
-          <form onSubmit = {handleSearch}><h3 className = {styles.Subtitle}>Rest and relax in absolute comfort 
+          <form onSubmit = {handleSearch}><h3 className = {styles.Subtitle}>Rest and relax in comfort 
         
           <input type = {"text"} className = {styles.SearchBar} placeholder = {"Look for something cosy..."} onChange = {newInput}></input>
           </h3>

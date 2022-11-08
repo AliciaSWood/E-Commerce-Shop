@@ -2,10 +2,11 @@
     margin-top: 5vh;
 
     width: 99.8vw;
-    height: 60vh;
+    height: 65vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
@@ -17,6 +18,7 @@
 
 .ItemInfo {
     width: 30vw;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     font-size: larger;
@@ -32,7 +34,8 @@
 .Button {
     height: 40px;
     width: 40px;
-    margin: 4px;
+    margin: 6px;
+    padding-bottom: 5px;
     border-radius: 50px;
     background-color: #2b1d42;
     color: white;
@@ -79,4 +82,33 @@
 }
 .Stock {
     font-size: 15px;
+}
+
+.HeartIcon {
+    height: 40px;
+    width: 40px;
+    &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    } 
+
+   
+}
+.Favourite {
+    height: 60px;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+}
+.FavText {
+    margin-top: 4px;
+    margin-right: 15px;
+}
+
+.itemNumber {
+    padding-top: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
 }

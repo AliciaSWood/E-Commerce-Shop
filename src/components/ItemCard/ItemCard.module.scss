@@ -8,12 +8,15 @@
     align-items: center;
     flex-direction: column;
     box-shadow: 10px 10px 10px rgb(218, 217, 217);
+    font-family: 'Noto Sans Limbu', sans-serif;;
  
 
     &:hover {
-        box-shadow: 10px 10px 20px;
+        box-shadow: 10px 10px 20px #f3b88d;
         cursor: pointer;
         transition: 0.2s;
+        color:#8f3d4b;
+        
     }
 }
 
@@ -26,4 +29,15 @@
 .Nav {
     text-decoration: none;
     color: black;
+    &:hover {
+        cursor: pointer;
+        transition: 0.2s;
+        color:#8f3d4b;
+        
+    }
+}
+.ItemName {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
 }

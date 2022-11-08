@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import ItemCard from '../../components/ItemCard/ItemCard';
-import { getItems } from '../../services/shopItems';
+import { getFeatured, getItems, tryGetFeatured } from '../../services/shopItems';
 import styles from "./MainItemGrid.module.scss"
 
 const MainItemGrid = () => {
     const [items, setItems] = useState([]);
 
-    useEffect(() => {
+    useEffect( () => {
         getItems().then((items) => setItems(items))
+       getFeatured()
     }, [])
  
     // console.log(items)
@@ -16,7 +17,8 @@ const MainItemGrid = () => {
     return (
         <>
         <div className = {styles.BestSellers}>
-            <h1>Some of our favourites...</h1>
+            <br></br>
+            <h1>Check out some of our favourites...</h1>
         </div>
         <div className = {styles.MainGrid}>
             

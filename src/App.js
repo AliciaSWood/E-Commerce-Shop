@@ -10,9 +10,6 @@ function App() {
   return (
     <div>
     <BrowserRouter>
-    
-    
-    {/* <ProductPage /> */}
     <Routes>
       <Route path="/" element = {<>
         <Header />
