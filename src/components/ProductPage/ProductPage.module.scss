@@ -7,6 +7,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+   
 
 }
 
@@ -14,6 +15,11 @@
     height: 600px;
     width: 800px;
     margin-right: 10vw;
+
+    @media only screen and (max-width:1390px) { 
+        width: 600px;
+        height: 500px;
+    }
 }
 
 .ItemInfo {

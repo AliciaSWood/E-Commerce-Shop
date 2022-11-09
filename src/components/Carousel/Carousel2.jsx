@@ -30,9 +30,9 @@ const Carousel2 = () => {
         className={styles.CarouselImage}
         src={item1.image}
       />
-      <Carousel.Caption>
-        <h3>Keep warm this winter</h3>
-        <p>With our new collection of soft blankets</p>
+      <Carousel.Caption className = {styles.Caption}>
+        <h3 >Keep warm this winter</h3>
+        <p >With our new collection of soft blankets</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item interval={3000}>
@@ -41,9 +41,9 @@ const Carousel2 = () => {
         src={item2.image}
       />
 
-      <Carousel.Caption>
-        <h3>Time for some fresh sheets?</h3>
-        <p>Check out our range of smooth, soft satin sheets to make bed time even more irresistable</p>
+      <Carousel.Caption className = {styles.Caption}>
+        <h3 >Time for some fresh sheets?</h3>
+        <p >Check out our range of smooth, soft satin sheets to make bed time even more irresistable</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item interval={3000}>
@@ -52,9 +52,9 @@ const Carousel2 = () => {
         src={item3.image}
       />
 
-      <Carousel.Caption>
-        <h3>And now for something totally different...</h3>
-        <p>
+      <Carousel.Caption className = {styles.Caption}>
+        <h3 >And now for something totally different...</h3>
+        <p >
           Make your room a little more whimsical with a fun new night light 
         </p>
       </Carousel.Caption>

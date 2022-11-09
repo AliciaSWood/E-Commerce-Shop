@@ -5,4 +5,11 @@
     margin-top: 5vh;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+
+    @media only screen and (max-width:850px) { 
+        
+        height: 35vh;
+        
+    }
 }

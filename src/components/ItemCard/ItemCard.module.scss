@@ -1,6 +1,6 @@
 .Card {
-    height: 33vh;
-    width: 15vw;
+    height: 300px;
+    width: 280px;
     // border: 2px solid black;
     margin: 20px;
     display: flex;
@@ -11,6 +11,15 @@
     font-family: 'Noto Sans Limbu', sans-serif;;
     border-radius: 10px;
     transition: transform .2s; /* Animation */
+    overflow: hidden;
+
+    @media only screen and (max-width:414px) {    
+        height: 160px;
+        width: 140px;
+        margin: 10px;
+        
+    }
+
     &:hover {
         box-shadow: 10px 10px 20px #a9bfde;
         cursor: pointer;
@@ -29,6 +38,14 @@
 .Nav {
     text-decoration: none;
     color: black;
+    @media only screen and (max-width:414px) {    
+       
+        width: 140px;
+        height: 160px;
+        margin: none;
+        
+    }
+
     &:hover {
         cursor: pointer;
         transition: 0.2s;
@@ -40,4 +57,11 @@
     margin-top: 10px;
     text-align: center;
     font-size: 25px;
+    font-weight: bolder;
+    margin: 3px;
+
+    @media only screen and (max-width:414px) {    
+        font-size: 15px;
+        
+    }
 }

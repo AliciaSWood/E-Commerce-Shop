@@ -1,0 +1,55 @@
+.CartTitle {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px
+}
+
+.Heading {
+   
+    display: flex;
+    padding-left: 15vw;
+    width: 50vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.Row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.CartRow {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.image {
+    width: 260px;
+    height: 200px;
+    
+}
+.Space {
+    width: 260px;
+}
+
+.Price {
+    margin-right: 7vw;
+}
+
+.DeleteButton {
+    height: 50px;
+    margin-left: 30px;
+    background-color: rgb(221, 99, 99);
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+

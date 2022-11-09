@@ -3,7 +3,8 @@ import Header from '../Header/Header';
 import styles from "./ProductPage.module.scss"
 import { getItemById, favouriteItem } from '../../services/shopItems';
 import { useParams } from 'react-router-dom';
-
+import { useContext } from "react";
+import { addItemToCart } from '../../services/cartItems';
 
 
 
@@ -14,7 +15,16 @@ const ProductPage = () => {
     const [addItem, setAddItem] = useState(1)
     const [favourite, setFavourite] = useState(false)
 
+    // const [cart, setCart] = useContext(cartContext)
+    // const addToCart = (event) => {
+    //     // const product = event.target.value
+    //     // cart.push(product)
+    //     setCart([...cart, event.target.value])
+    // }
 
+    const addItemButton = () => {
+        addItemToCart(item)
+    }
    
 
     // To update item to 'favourite' on Firestore
@@ -53,13 +63,13 @@ const ProductPage = () => {
         <button className = {styles.Button} onClick = {increase}>+</button> <p className = {styles.itemNumber}>&nbsp;{addItem}&nbsp;</p> <button className = {styles.Button} onClick = {decrease}>-</button>
 
         </div>
-        <label className = {styles.Label} for = "variant">Choose a colour:</label>
+        <label className = {styles.Label} htmlFor = "variant">Choose a colour:</label>
         <select name = "variant" className = {styles.SelectBox}>
             <option>{item.variant}</option>
             <option>Orange</option>
             <option>Black</option>
         </select>
-        <button className = {styles.CartButton}>Add to Cart!</button>
+        <button className = {styles.CartButton} onClick = {addItemButton}>Add to Cart!</button>
       
         <h3>Product Description:</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quisquam quo distinctio doloremque mollitia aspernatur atque eveniet, obcaecati provident consectetur a blanditiis quidem in, nemo similique sequi, debitis quia cumque!</p>

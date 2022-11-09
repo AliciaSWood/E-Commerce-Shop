@@ -41,7 +41,7 @@ const navigate = useNavigate()
               <li><Link to = "/">Home</Link> </li>
               <li><Link to = "/">Shop</Link></li>
               <li><Link to = "/">About Us</Link></li>
-              <li><Link to = "/">Cart</Link></li>
+              <li><Link to = "/cart">Cart</Link></li>
             </ul>
           </nav>
           <form onSubmit = {handleSearch}><h3 className = {styles.Subtitle}>Rest and relax in comfort 
