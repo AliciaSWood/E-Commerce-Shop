@@ -9,13 +9,14 @@ export const cartContext = createContext()
 const Cart = () => {
 
     const [items, setItems] = useState([]);
+    const [cart, setCart] = useState();
     
     // const [cart, setCart] = useContext(cartContext)
 
 
 // To get item for page
 useEffect(() => {
-    getCartItems().then((items) => setItems(items))}, []);
+    getCartItems().then((items) => setItems(items))}, [cart]);
 
     return (
         <div>
@@ -27,7 +28,7 @@ useEffect(() => {
             <p>Price</p>
         </div>
         {items.map((itemData) => (
-                <CartItem key = {itemData.id} itemData = {itemData} />
+                <CartItem key = {itemData.id} itemData = {itemData} setCart = {setCart}/>
             ))}
         </div>
     );

@@ -3,7 +3,6 @@ import Header from '../Header/Header';
 import styles from "./ProductPage.module.scss"
 import { getItemById, favouriteItem } from '../../services/shopItems';
 import { useParams } from 'react-router-dom';
-import { useContext } from "react";
 import { addItemToCart } from '../../services/cartItems';
 
 

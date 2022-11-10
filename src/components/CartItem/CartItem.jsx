@@ -1,17 +1,14 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { deleteItemById } from '../../services/cartItems';
 import styles from "./CartItem.module.scss"
 
 
 
-const CartItem = ({itemData}) => {
-    const navigate = useNavigate();
+const CartItem = ({itemData, setCart}) => {
 
       const deleteItemButton = () => {
-        deleteItemById(itemData).then(() => navigate('/cart'))
-       
+        deleteItemById(itemData)
+       setCart([itemData])
     } 
 
     return (

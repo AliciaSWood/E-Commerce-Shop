@@ -1,7 +1,5 @@
 import React from 'react';
-import Carousel from '../../components/Carousel/Carousel';
 import styles from "./CarouselHolder.module.scss"
-import { getItems } from '../../services/shopItems';
 import Carousel2 from '../../components/Carousel/Carousel2';
 
 const CarouselHolder = () => {
