@@ -1,22 +1,21 @@
 .MainGrid {
-    width: 100vw;
-    height: 75vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    // grid-template-rows: 1fr 1fr;
-    padding-left: 1.5vw;
-    margin-bottom: 2vh;
-    margin-top: 4vh;
-    overflow: hidden;
+  width: 100vw;
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 1.5vw;
+  margin-bottom: 2vh;
+  margin-top: 4vh;
+  overflow: hidden;
 
-    @media only screen and (max-width:850px) { 
-        grid-template-columns: 1fr 1fr ;
-        padding-left: 6.5vw;
-        height: 150vh;
-    }
+  @media only screen and (max-width: 850px) {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 6.5vw;
+    height: 150vh;
+  }
 }
 
 .BestSellers {
-    text-align: center;
-    overflow: hidden;
+  text-align: center;
+  overflow: hidden;
 }

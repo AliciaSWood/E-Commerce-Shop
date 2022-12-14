@@ -1,67 +1,61 @@
 .Card {
-    height: 300px;
-    width: 280px;
-    // border: 2px solid black;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 10px 10px 10px rgb(218, 217, 217);
-    font-family: 'Noto Sans Limbu', sans-serif;;
-    border-radius: 10px;
-    transition: transform .2s; /* Animation */
-    overflow: hidden;
+  height: 300px;
+  width: 280px;
+  // border: 2px solid black;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 10px rgb(218, 217, 217);
+  font-family: "Noto Sans Limbu", sans-serif;
+  border-radius: 10px;
+  transition: transform 0.2s; /* Animation */
+  overflow: hidden;
 
-    @media only screen and (max-width:414px) {    
-        height: 160px;
-        width: 140px;
-        margin: 10px;
-        
-    }
+  @media only screen and (max-width: 414px) {
+    height: 160px;
+    width: 140px;
+    margin: 10px;
+  }
 
-    &:hover {
-        box-shadow: 10px 10px 20px #a9bfde;
-        cursor: pointer;
-        transition: 0.2s;
-        color:#8f3d4b;
-        transform: scale(1.10);
-    }
+  &:hover {
+    box-shadow: 10px 10px 20px #a9bfde;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #8f3d4b;
+    transform: scale(1.1);
+  }
 }
 
 .ItemImage {
-    width: 100%;
-    height: 60%;
+  width: 100%;
+  height: 60%;
 }
-
 
 .Nav {
-    text-decoration: none;
-    color: black;
-    @media only screen and (max-width:414px) {    
-       
-        width: 140px;
-        height: 160px;
-        margin: none;
-        
-    }
+  text-decoration: none;
+  color: black;
+  @media only screen and (max-width: 414px) {
+    width: 140px;
+    height: 160px;
+    margin: none;
+  }
 
-    &:hover {
-        cursor: pointer;
-        transition: 0.2s;
-        color:#8f3d4b;
-        
-    }
+  &:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    color: #8f3d4b;
+  }
 }
 .ItemName {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bolder;
-    margin: 3px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 3px;
 
-    @media only screen and (max-width:414px) {    
-        font-size: 15px;
-        
-    }
+  @media only screen and (max-width: 414px) {
+    font-size: 15px;
+  }
 }

@@ -1,68 +1,64 @@
 .Main {
-    margin-top: 5vh;
+  margin-top: 5vh;
 
-    width: 99.8vw;
-    height: 65vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-   
-
+  width: 99.8vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Image {
-    height: 600px;
-    width: 800px;
-    margin-right: 10vw;
+  height: 600px;
+  width: 800px;
+  margin-right: 10vw;
 
-    @media only screen and (max-width:1390px) { 
-        width: 600px;
-        height: 500px;
-    }
+  @media only screen and (max-width: 1390px) {
+    width: 600px;
+    height: 500px;
+  }
 }
 
 .ItemInfo {
-    width: 30vw;
-    height: 65vh;
-    display: flex;
-    flex-direction: column;
-    font-size: larger;
+  width: 30vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
 }
 
 .ButtonBox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .Button {
-    height: 40px;
-    width: 40px;
-    margin: 6px;
-    padding-bottom: 5px;
-    border-radius: 50px;
-    background-color: #2b1d42;
-    color: white;
+  height: 40px;
+  width: 40px;
+  margin: 6px;
+  padding-bottom: 5px;
+  border-radius: 50px;
+  background-color: #2b1d42;
+  color: white;
 
-    font-size: 20px;
+  font-size: 20px;
 
-    &:hover {
-        cursor: pointer;
-        opacity: 0.5;
-        transition: 0.2s;
-        
-    }
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s;
+  }
 }
 .CartButton {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    background: rgb(226, 115, 134);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background: rgb(226, 115, 134);
   border-radius: 50px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
@@ -70,51 +66,49 @@
   outline: 0 solid transparent;
   padding: 15px 25px;
   width: fit-content;
-   border: 0;
-   &:hover {
+  border: 0;
+  &:hover {
     opacity: 0.7;
-   }
+  }
 }
 
 .SelectBox {
-    height: 30px;
-    font-size: 15px;
-    width: 100px
+  height: 30px;
+  font-size: 15px;
+  width: 100px;
 }
 
 .Label {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .Stock {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .HeartIcon {
-    height: 40px;
-    width: 40px;
-    &:hover {
-        opacity: 0.6;
-        cursor: pointer;
-    } 
-
-   
+  height: 40px;
+  width: 40px;
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
 }
 .Favourite {
-    height: 60px;
-    width: 30vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-content: center;
+  height: 60px;
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-content: center;
 }
 .FavText {
-    margin-top: 4px;
-    margin-right: 15px;
+  margin-top: 4px;
+  margin-right: 15px;
 }
 
 .itemNumber {
-    padding-top: 10px;
-    margin-right: 3px;
-    margin-left: 3px;
+  padding-top: 10px;
+  margin-right: 3px;
+  margin-left: 3px;
 }

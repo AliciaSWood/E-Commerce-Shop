@@ -1,168 +1,161 @@
 .Header {
-    width: 100vw;
-    margin-top: 20px;
-    background-color: rgb(59, 21, 90);
-    // background-image: linear-gradient(110deg, #c4c1bd 1%, rgb(59, 21, 90));
-    background-image: linear-gradient(110deg, #2b1d42 20%, #4a2f48, #8f3d4b,  #f3b88d, #fceccb);
-    height: 258px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-family: Indie Flower, cursive;
-    overflow: hidden;
-    
+  width: 100vw;
+  margin-top: 20px;
+  background-color: rgb(59, 21, 90);
+  // background-image: linear-gradient(110deg, #c4c1bd 1%, rgb(59, 21, 90));
+  background-image: linear-gradient(
+    110deg,
+    #2b1d42 20%,
+    #4a2f48,
+    #8f3d4b,
+    #f3b88d,
+    #fceccb
+  );
+  height: 258px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Indie Flower, cursive;
+  overflow: hidden;
 }
 .Circle {
-    background: linear-gradient(-45deg, white, white, black, black);
-    height: 220px;
-    width: 220px;
-    border-radius: 50%;
-    animation: gradient 8s ease infinite;
-    background-size: 400% 400%;
-    box-shadow: 5px 10px 10px white;
-    margin-left: 80px;
+  background: linear-gradient(-45deg, white, white, black, black);
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  animation: gradient 8s ease infinite;
+  background-size: 400% 400%;
+  box-shadow: 5px 10px 10px white;
+  margin-left: 80px;
 
-    @media only screen and (max-width:1100px) { 
-        height: 180px;
-        width: 180px;
-        margin-left: 30px
-    }
-    @media only screen and (max-width:1100px) { 
-        display:none;
-    }
+  @media only screen and (max-width: 1100px) {
+    height: 180px;
+    width: 180px;
+    margin-left: 30px;
+  }
+  @media only screen and (max-width: 1100px) {
+    display: none;
+  }
 }
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-
-    
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .DontCare {
-font-size: 5em;
-margin-left: 50px;
-margin-right: 30px;
-text-shadow: 10px 10px 8px black;
-color: white;
-margin-top: 25px;
-@media only screen and (max-width:1590px) { 
+  font-size: 5em;
+  margin-left: 50px;
+  margin-right: 30px;
+  text-shadow: 10px 10px 8px black;
+  color: white;
+  margin-top: 25px;
+  @media only screen and (max-width: 1590px) {
     margin-right: 0px;
     width: 320px;
-}
-@media only screen and (max-width:1100px) { 
+  }
+  @media only screen and (max-width: 1100px) {
     font-size: 4em;
-}
-@media only screen and (max-width:414px) { 
+  }
+  @media only screen and (max-width: 414px) {
     font-size: 2em;
     width: 200px;
-}
+  }
 }
 
 .EndBox {
-    width: 45vw;
-    height: 250px;
-    position: relative;
-    margin-left: 6vw;
-    overflow: hidden;
-    @media only screen and (max-width:1400px) { 
-        margin-left: 0px;
-    }
-    
-
+  width: 45vw;
+  height: 250px;
+  position: relative;
+  margin-left: 6vw;
+  overflow: hidden;
+  @media only screen and (max-width: 1400px) {
+    margin-left: 0px;
+  }
 }
 
 .Navbar {
-    margin-top: 10px;
-    height: 180px;
-    width: 45vw;
-    overflow: hidden;
-
-   
+  margin-top: 10px;
+  height: 180px;
+  width: 45vw;
+  overflow: hidden;
 }
 .Navbar > ul {
-    list-style-type:none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 20px;
-    
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
 
-    @media only screen and (max-width:850px) { 
-        flex-direction: column;
-        
-    }
-    
+  @media only screen and (max-width: 850px) {
+    flex-direction: column;
+  }
 }
 
 .Navbar > ul > li {
-    @media only screen and (max-width:850px) { 
-        margin: 8px;
-        z-index: 100;
-        
-    }
-    &:hover {
-        text-shadow: 5px 5px 10px white;
-        transition: 0.2s;
-        transform: scale(1.3);
-        
-    }
-
+  @media only screen and (max-width: 850px) {
+    margin: 8px;
+    z-index: 100;
+  }
+  &:hover {
+    text-shadow: 5px 5px 10px white;
+    transition: 0.2s;
+    transform: scale(1.3);
+  }
 }
 
 .Navbar > ul > li > a {
-    text-decoration: none;
-    color: rgb(83, 80, 80);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:white;
-    text-shadow: 5px 5px 10px black;
+  text-decoration: none;
+  color: rgb(83, 80, 80);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  text-shadow: 5px 5px 10px black;
 
-    &:hover {
-        text-shadow: 5px 5px 10px white;
-        transition: 0.2s;
-
-    }
+  &:hover {
+    text-shadow: 5px 5px 10px white;
+    transition: 0.2s;
+  }
 }
 
 .Subtitle {
-    margin-left: 60px;
-    text-align: start;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
-    text-shadow: 5px 5px 10px rgb(202, 171, 171);
-    font-size: 20px;
-    width: 700px;
-    overflow: hidden;
+  margin-left: 60px;
+  text-align: start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-shadow: 5px 5px 10px rgb(202, 171, 171);
+  font-size: 20px;
+  width: 700px;
+  overflow: hidden;
 
-    @media only screen and (max-width:1300px) { 
-        margin-left: 0px;
-    }
-    @media only screen and (max-width:1100px) { 
-        font-size: 15px;
-    }
-    @media only screen and (max-width:850px) { 
-        display: none;
-    }
+  @media only screen and (max-width: 1300px) {
+    margin-left: 0px;
+  }
+  @media only screen and (max-width: 1100px) {
+    font-size: 15px;
+  }
+  @media only screen and (max-width: 850px) {
+    display: none;
+  }
 }
 .SearchBar {
-    border-radius: 30px;
-    box-shadow: 2px 2px rgb(206, 205, 205);
-    border: none;
-    height: 2rem;
-    width: 20vw;
-    margin-left: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    padding-left: 20px;
-    overflow: hidden;
-    @media only screen and (max-width:1100px) { 
-        font-size: 12px;
-        z-index: 1;
-    }
+  border-radius: 30px;
+  box-shadow: 2px 2px rgb(206, 205, 205);
+  border: none;
+  height: 2rem;
+  width: 20vw;
+  margin-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  padding-left: 20px;
+  overflow: hidden;
+  @media only screen and (max-width: 1100px) {
+    font-size: 12px;
+    z-index: 1;
+  }
 }

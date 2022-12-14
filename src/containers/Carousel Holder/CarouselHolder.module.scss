@@ -1,15 +1,13 @@
 .Holder {
-    width: 100vw;
-    height: 54vh;
-    background-image: linear-gradient(110deg, #a9bfde 40%, #faf4ed);
-    margin-top: 5vh;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  width: 100vw;
+  height: 54vh;
+  background-image: linear-gradient(110deg, #a9bfde 40%, #faf4ed);
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 
-    @media only screen and (max-width:850px) { 
-        
-        height: 35vh;
-        
-    }
+  @media only screen and (max-width: 850px) {
+    height: 35vh;
+  }
 }
